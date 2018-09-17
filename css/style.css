@@ -1,0 +1,568 @@
+body {
+    height: 4000px;
+}
+
+
+*{
+    outline: none
+}
+
+
+/* qradient */
+#top {
+    height: 14px;
+    background-image: -webkit-linear-gradient( 0deg, #00a65a 0%, #0086cd 16%, #873996 37%, #ec3824 62%, #f0812b 82%, #ffc90a 100%);
+}
+
+/* unvan */
+#unvan {
+    background: #f2f2f2;
+    padding: 10px 0px;
+    margin-bottom: 40px;
+}
+
+#unvan .col-12 h4 {
+    color: rgb(83, 78, 79);
+    font-size: 13px;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+/* nav bar */
+#nav-bar {
+    margin-bottom: 40px;
+}
+
+#nav-bar .col-2 img {
+    width: 100%;
+}
+#nav-bar .col-5 ul{
+    padding-left: 10px;
+}
+#nav-bar .col-5 ul li {
+    display: inline-block;
+    padding: 10px 0px;
+    margin-right: 10px;
+}
+
+#nav-bar .col-5 ul li a {
+    color: black;
+    padding: 0px 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.akademi>a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.akademi ul {
+    position: absolute;
+    visibility: hidden;
+    background: rgb(65, 65, 65);
+    z-index: 10;
+    transition: all .5s ease;
+    cursor: pointer;
+    width: 220px;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.akademi li a {
+    display: block;
+    color: white!important;
+}
+
+.akademi:hover ul {
+    visibility: visible;
+}
+
+.akademi ul li:hover {
+    background: gray;
+}
+
+.akademi li a:hover {
+    color: rgb(226, 218, 218);
+}
+.tehsil{
+    position: relative;
+}
+/* .ders ul > li a{
+    color: white;
+} */
+.tehsil:hover .ders{
+    visibility: visible;
+   opacity: 1 ;
+
+}
+
+.ders{
+   visibility: hidden;
+   border-radius: 10px;
+   opacity: 0;
+    position: absolute;
+    top: 25px;
+    width: 600px;
+    height: 350px;
+    transition: all .4s;
+    background: rgb(59, 53, 53);
+   /* visibility: hidden; */
+    z-index: 30;
+}
+
+.ders ul{
+
+    position: relative;
+    top: 0px;
+    width: 45%;
+    display: inline-block;
+    height: 100%;
+}
+.ders li:hover{
+    background: #b9b4b4;
+    
+}
+.ders ul h3{
+    display: inline-block;
+    color: #e4e4e4;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+#nav-bar .col-5 .ders ul li{
+    display:block;
+    color: rgb(231, 223, 223);
+    
+}
+.ders ul > li > a{
+    color: white !important;
+    display: block;
+    padding-top: 10px;
+}
+
+
+
+#nav-bar .col-3 i {
+    float: right;
+    padding: 10px 0px;
+}
+
+#nav-bar .col-3 i:hover {
+    background: yellow;
+}
+
+#nav-bar .col-2 p {
+    text-transform: capitalize;
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+    background: #0086cd;
+}
+
+#nav-bar .col-2 p:hover {
+    background: #6fa2bb;
+}
+
+
+
+/*melumatlar gundelik  */
+
+#slayd .col-8 div img {
+    height: 420px;
+    width: 100%;
+    background-size: 100%;
+}
+
+#slayd .col-8 {
+    position: relative;
+    background-size: cover;
+}
+
+#slayd .col-8 p {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    margin-top: 10px;
+    color: #ececec;
+    font-size: 23px;
+    position: absolute;
+}
+
+.liner {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(180deg, transparent, black);
+}
+
+
+#slayd .col-4 li {
+    padding: 5px 10px;
+    transition: .3s;
+}
+
+#slayd .col-4 div .col-8 div {
+    height: 420px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#slayd .col-4 ul {
+    height: 420px;
+    background: rgb(44, 39, 39);
+}
+
+#slayd .col-4 li:hover {
+    background: rgb(187, 181, 181);
+}
+
+#slayd .col-4 li p {
+    padding: 10px 10px;
+    color: rgb(153, 145, 145);
+}
+
+#slayd .col-4 h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+
+
+/* ustunlukleri */
+#servis {
+    margin-top: 79px;
+}
+
+#servis .col-3 div {
+    padding-top: 20px;
+    width: 100%;
+    height: 250px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .3s;
+}
+
+#servis .col-3 div:hover {
+    overflow: hidden;
+    transform: scale(1.05);
+    box-shadow: 1px 1px 20px 1px rgb(221, 215, 215);
+}
+
+#servis .col-3 div i {
+    font-size: 150px;
+    text-align: center;
+    margin-left: calc(50% - 85px)
+}
+
+#servis .col-3 p {
+    text-align: center;
+    padding: 25px 0px;
+    font-size: 20px;
+}
+
+/* kecirilen dersler */
+
+#tedris .col-12 {
+    margin-top: 50px;
+}
+
+#tedris .col-4{
+    border-radius: 10px;
+    
+}
+
+#tedris .col-12 p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.box-tedris {
+    margin-top: 50px;
+    height: 186px;
+    transition: .3s;
+}
+
+.box-tedris:hover {
+    transform: scale(1.05);
+}
+
+.col1 {
+   
+    color: white;
+    background: #ffc90a;
+    background-image: url(../images/3d.png );
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-position: 120px 44px;
+}
+
+.col2 {
+    background: #873996;
+    background-image: url(../images/digit.png );
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-position: 120px 44px;
+}
+
+.col3 {
+    background: #0086cd;
+    background-image: url(../images/p.png );
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-position: 120px 44px;
+}
+
+.col4 {
+    background: #00a65a;
+    background-image: url(../images/sistem.png );
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-position: 100px 44px;
+}
+
+.col5 {
+    background: #ec3824;
+    background-image: url(../images/ms.png );
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-position: 120px 44px;
+}
+
+.col6 {
+    background: #f0812b;
+    background-image: url(../images/v.png );
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-position: 120px 44px;
+}
+
+#tedris .box-tedris b {
+    font-size: 20px;
+    position: absolute;
+    top: calc(50% - 2px);
+    left: calc(30% - 2px);
+}
+
+
+/* reyler */
+
+
+ #sektor {
+    margin-top: 80px;
+}
+
+#sektor .col-6 {
+    height: 450px;
+}
+
+#sektor .col-6 .col-4 img {
+    width: 100%;
+    border-radius: 100%;
+    margin: 20px 20px;
+}
+
+ #sektor.logo{
+    /* margin:0px; */
+ }
+
+
+#sektor .col-6 .col-8 h1 {
+    color: #e4e4e4;
+    font-size: 37px;
+    padding: 10px 0px;
+}
+
+.rey {
+    border: 1px solid rgb(247, 243, 243);
+    box-shadow: 2px 2px 2px rgb(172, 165, 165);
+    padding: 27px 26px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: #fff;
+}  
+
+
+/* emekdasliq */
+.emekdasliq{
+height: 250px;
+}
+.emekdasliq .col-12 p {
+    text-align: center;
+    font-family: 'Exo', sans-serif;
+}
+
+.emekdasliq .col-4 {
+    height: 120px;
+    transition: .6s;
+    box-shadow: 2.424px 4.373px 17px 0 rgba(0, 0, 0, 0.14);
+}
+
+.emekdasliq .col-4:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.emekdasliq .col-4 img {
+    padding: 40px;
+    transform: scale(1.05);
+    transition: .3s ease;
+}
+
+.emekdasliq .digit img {
+    padding-top: 16px;
+}
+
+/* muraciet  */
+#elaqe {
+    position: relative;
+    height:600px ;
+    background: url(../images/s.png);
+    background-size: cover;
+}
+
+#elaqe .col-12 {
+    position: relative;
+}
+.contact {
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    height: 200px;
+   
+}
+.contact h1{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.contact h1 span{
+     color: red;
+   
+ }
+ #elaqe .col-12 .elaqeImput{
+     border-radius: 10px;
+     position: relative;
+     left: calc(50% - 30%);
+     width: 50%;
+     height: 200px;
+     background: rgb(241, 241, 238);
+ }
+ #elaqe .col-12 .elaqeImput div{
+     position: relative;
+     display: inline-block;
+     width: calc(95%/2);
+     height: calc(80%/2);
+     /* background: red; */
+ }
+ #elaqe .col-12 .elaqeImput div input{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    border: none;
+    border-bottom: 2px solid black;
+    width: 100%;
+    transition: all .6s;
+    background: transparent;   
+ }
+ #elaqe .col-12 .elaqeImput div input{     
+     padding-left: 10px;
+ }
+ .hov{
+    padding-left: 0px;
+     height: 40px;
+     transition: all .2s;
+ }
+ .hov:hover{
+     left: 10px;
+     /* transform: scale(0.9); */
+    padding-left: 0px;
+    box-shadow: 3px 3px 3px rgb(94, 89, 81);
+     /* background:/ #ffc90a; */
+ }
+ 
+ #elaqe .col-12 .elaqeImput div button{
+    position: absolute;
+    bottom: 0px;
+    left: 30px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: blue;
+    cursor: pointer;
+
+
+ }
+/* ........................ */
+
+#footer .col-12 {
+    margin-top: 80px;
+}
+
+#footer .col-12 ul li {
+    display: block;
+    padding: 20px 25px;
+}
+
+.son {
+    float: left;
+}
+
+.son h3 {
+    padding-left: 25px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18.75px;
+}
+
+.son a {
+    color: #6f6f6f;
+    font-size: 18px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.son a:hover {
+    border-bottom: 1px solid #6f6f6f;
+    ;
+}
+
+.son p {
+    color: #6f6f6f;
+    font-size: 20px;
+}
+
+.son span {
+    border-radius: 12px;
+    padding: 6px 15px;
+    color: #ec3824;
+    font-size: 18px;
+    border: 1px solid #ec3824;
+    transition: 1s;
+}
+
+.son span:hover {
+    background: #ec3824;
+    color: white;
+}
+
+.son a i {
+    text-decoration: none;
+    font-size: 18px;
+    font-size: 18px;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    color: #6f6f6f;
+}
